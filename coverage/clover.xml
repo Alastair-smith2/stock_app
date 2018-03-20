@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1521540162900" clover="3.2.0">
-  <project timestamp="1521540162900" name="All files">
-    <metrics statements="46" coveredstatements="46" conditionals="10" coveredconditionals="10" methods="21" coveredmethods="21" elements="77" coveredelements="77" complexity="0" loc="46" ncloc="46" packages="3" files="9" classes="9">
+<coverage generated="1521541285415" clover="3.2.0">
+  <project timestamp="1521541285415" name="All files">
+    <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="25" coveredmethods="25" elements="96" coveredelements="96" complexity="0" loc="59" ncloc="59" packages="3" files="10" classes="10">
       <package name="stock_app">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="App.js" path="/Users/ALASTAIR/Code/react/stock_app/App.js">
@@ -12,31 +12,31 @@
         </file>
         <file name="setupTests.js" path="/Users/ALASTAIR/Code/react/stock_app/setupTests.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="3" count="8" type="stmt"/>
+          <line num="3" count="9" type="stmt"/>
         </file>
       </package>
       <package name="stock_app.src.components">
-        <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="11"/>
+        <metrics statements="22" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="12" coveredmethods="12"/>
         <file name="Button.js" path="/Users/ALASTAIR/Code/react/stock_app/src/components/Button.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="6" count="4" type="stmt"/>
           <line num="8" count="4" type="stmt"/>
           <line num="11" count="1" type="stmt"/>
           <line num="15" count="4" type="stmt"/>
-          <line num="26" count="4" type="stmt"/>
+          <line num="26" count="5" type="stmt"/>
         </file>
         <file name="Input.js" path="/Users/ALASTAIR/Code/react/stock_app/src/components/Input.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="6" count="2" type="stmt"/>
           <line num="10" count="4" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
-          <line num="27" count="4" type="stmt"/>
+          <line num="27" count="5" type="stmt"/>
         </file>
         <file name="Instructions.js" path="/Users/ALASTAIR/Code/react/stock_app/src/components/Instructions.js">
           <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="4" count="2" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
           <line num="5" count="1" type="stmt"/>
-          <line num="12" count="2" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
         </file>
         <file name="Search.js" path="/Users/ALASTAIR/Code/react/stock_app/src/components/Search.js">
           <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
@@ -46,11 +46,17 @@
           <line num="20" count="2" type="stmt"/>
           <line num="24" count="1" type="stmt"/>
           <line num="28" count="15" type="stmt"/>
-          <line num="87" count="2" type="stmt"/>
+          <line num="87" count="3" type="stmt"/>
+        </file>
+        <file name="StockItem.js" path="/Users/ALASTAIR/Code/react/stock_app/src/components/StockItem.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="22" count="2" type="stmt"/>
         </file>
       </package>
       <package name="stock_app.src.screens">
-        <metrics statements="23" coveredstatements="23" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9"/>
+        <metrics statements="33" coveredstatements="33" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12"/>
         <file name="Exchange.js" path="/Users/ALASTAIR/Code/react/stock_app/src/screens/Exchange.js">
           <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
           <line num="9" count="3" type="stmt"/>
@@ -79,9 +85,19 @@
           <line num="100" count="1" type="stmt"/>
         </file>
         <file name="Stock.js" path="/Users/ALASTAIR/Code/react/stock_app/src/screens/Stock.js">
-          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
+          <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+          <line num="10" count="5" type="stmt"/>
+          <line num="11" count="5" type="stmt"/>
+          <line num="14" count="5" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="34" count="7" type="stmt"/>
+          <line num="56" count="1" type="stmt"/>
+          <line num="72" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>
