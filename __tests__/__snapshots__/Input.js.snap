@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Input component It should render Should render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Input
+    onTextInput={[MockFunction]}
+    type="username"
+    value=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontFamily": "Futura",
+              "fontSize": 16,
+            }
+          }
+        />,
+        <TextInput
+          allowFontScaling={true}
+          autoCapitalize="none"
+          onChangeText={[Function]}
+          placeholder="Please enter you username"
+          style={
+            Object {
+              "borderColor": "#BBB",
+              "borderWidth": 1,
+              "flex": 1.5,
+              "height": 40,
+              "padding": 10,
+            }
+          }
+          type="username"
+          underlineColorAndroid="transparent"
+          value=""
+        />,
+      ],
+      "style": Object {
+        "alignContent": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": undefined,
+          "ellipsizeMode": "tail",
+          "style": Object {
+            "fontFamily": "Futura",
+            "fontSize": 16,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "allowFontScaling": true,
+          "autoCapitalize": "none",
+          "onChangeText": [Function],
+          "placeholder": "Please enter you username",
+          "style": Object {
+            "borderColor": "#BBB",
+            "borderWidth": 1,
+            "flex": 1.5,
+            "height": 40,
+            "padding": 10,
+          },
+          "type": "username",
+          "underlineColorAndroid": "transparent",
+          "value": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontFamily": "Futura",
+                "fontSize": 16,
+              }
+            }
+          />,
+          <TextInput
+            allowFontScaling={true}
+            autoCapitalize="none"
+            onChangeText={[Function]}
+            placeholder="Please enter you username"
+            style={
+              Object {
+                "borderColor": "#BBB",
+                "borderWidth": 1,
+                "flex": 1.5,
+                "height": 40,
+                "padding": 10,
+              }
+            }
+            type="username"
+            underlineColorAndroid="transparent"
+            value=""
+          />,
+        ],
+        "style": Object {
+          "alignContent": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": undefined,
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "fontFamily": "Futura",
+              "fontSize": 16,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "allowFontScaling": true,
+            "autoCapitalize": "none",
+            "onChangeText": [Function],
+            "placeholder": "Please enter you username",
+            "style": Object {
+              "borderColor": "#BBB",
+              "borderWidth": 1,
+              "flex": 1.5,
+              "height": 40,
+              "padding": 10,
+            },
+            "type": "username",
+            "underlineColorAndroid": "transparent",
+            "value": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
