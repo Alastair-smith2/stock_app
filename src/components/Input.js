@@ -17,6 +17,7 @@ export default class Input extends Component {
           type={this.props.type}
           underlineColorAndroid={"transparent"}
           autoCapitalize={"none"}
+          secureTextEntry={this.props.type == "password"}
           style={styles.textInput}
         />
       </View>

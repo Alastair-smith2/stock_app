@@ -4,7 +4,107 @@ exports[`The Stock screen It should render Should render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Stock />,
+  Symbol(enzyme.__unrendered__): <Stock
+    appData={
+      Object {
+        "authenticated": false,
+        "currencyData": null,
+        "dataFetched": false,
+        "error": false,
+        "isFetching": false,
+        "stockCode": "",
+        "stockData": Array [
+          Object {
+            "data": Object {
+              "1. open": "94.2550",
+              "2. high": "94.3300",
+              "3. low": "94.1700",
+              "4. close": "94.1800",
+              "5. volume": "2415049",
+            },
+            "date": "2018-03-14 16:00:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2700",
+              "2. high": "94.3000",
+              "3. low": "94.2100",
+              "4. close": "94.2550",
+              "5. volume": "217935",
+            },
+            "date": "2018-03-13 15:59:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2400",
+              "2. high": "94.3000",
+              "3. low": "94.2300",
+              "4. close": "94.2700",
+              "5. volume": "143333",
+            },
+            "date": "2018-03-12 15:58:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2050",
+              "2. high": "94.2500",
+              "3. low": "94.1900",
+              "4. close": "94.2350",
+              "5. volume": "277754",
+            },
+            "date": "2018-03-11 15:57:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2700",
+              "2. high": "94.3000",
+              "3. low": "94.2100",
+              "4. close": "94.2550",
+              "5. volume": "217935",
+            },
+            "date": "2018-03-10 15:59:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2400",
+              "2. high": "94.3000",
+              "3. low": "94.2300",
+              "4. close": "94.2700",
+              "5. volume": "143333",
+            },
+            "date": "2018-03-09 15:58:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.2050",
+              "2. high": "94.2500",
+              "3. low": "94.1900",
+              "4. close": "94.2350",
+              "5. volume": "277754",
+            },
+            "date": "2018-03-08 15:57:00",
+          },
+          Object {
+            "data": Object {
+              "1. open": "94.1400",
+              "2. high": "94.2100",
+              "3. low": "94.1300",
+              "4. close": "94.2050",
+              "5. volume": "381419",
+            },
+            "date": "2018-03-05 15:56:00",
+          },
+        ],
+      }
+    }
+    fetchStock={[MockFunction]}
+    initialFetchData={[MockFunction]}
+    navigation={
+      Object {
+        "navigate": [MockFunction],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -45,6 +145,190 @@ ShallowWrapper {
             type="search"
             value=""
           />
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 0.45,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 0.2,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontFamily": "Futura",
+                  "fontSize": 24,
+                }
+              }
+            >
+              
+               Shares
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flex": 0.55,
+                "margin": 5,
+              }
+            }
+          >
+            <FlatList
+              data={
+                Array [
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2550",
+                      "2. high": "94.3300",
+                      "3. low": "94.1700",
+                      "4. close": "94.1800",
+                      "5. volume": "2415049",
+                    },
+                    "date": "2018-03-14 16:00:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2700",
+                      "2. high": "94.3000",
+                      "3. low": "94.2100",
+                      "4. close": "94.2550",
+                      "5. volume": "217935",
+                    },
+                    "date": "2018-03-13 15:59:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2400",
+                      "2. high": "94.3000",
+                      "3. low": "94.2300",
+                      "4. close": "94.2700",
+                      "5. volume": "143333",
+                    },
+                    "date": "2018-03-12 15:58:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2050",
+                      "2. high": "94.2500",
+                      "3. low": "94.1900",
+                      "4. close": "94.2350",
+                      "5. volume": "277754",
+                    },
+                    "date": "2018-03-11 15:57:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2700",
+                      "2. high": "94.3000",
+                      "3. low": "94.2100",
+                      "4. close": "94.2550",
+                      "5. volume": "217935",
+                    },
+                    "date": "2018-03-10 15:59:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2400",
+                      "2. high": "94.3000",
+                      "3. low": "94.2300",
+                      "4. close": "94.2700",
+                      "5. volume": "143333",
+                    },
+                    "date": "2018-03-09 15:58:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2050",
+                      "2. high": "94.2500",
+                      "3. low": "94.1900",
+                      "4. close": "94.2350",
+                      "5. volume": "277754",
+                    },
+                    "date": "2018-03-08 15:57:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.1400",
+                      "2. high": "94.2100",
+                      "3. low": "94.1300",
+                      "4. close": "94.2050",
+                      "5. volume": "381419",
+                    },
+                    "date": "2018-03-05 15:56:00",
+                  },
+                ]
+              }
+              disableVirtualization={false}
+              horizontal={false}
+              initialNumToRender={10}
+              keyExtractor={[Function]}
+              maxToRenderPerBatch={10}
+              numColumns={1}
+              onEndReachedThreshold={2}
+              onViewableItemsChanged={[Function]}
+              renderItem={[Function]}
+              scrollEventThrottle={50}
+              updateCellsBatchingPeriod={50}
+              windowSize={21}
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 0.1,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "900",
+                }
+              }
+            >
+              ↓
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 0.2,
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              The Highest value, 
+              94.33
+              , at any point for -
+               
+              
+               
+            </Text>
+          </View>
         </View>,
       ],
       "style": Object {
@@ -109,6 +393,564 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontFamily": "Futura",
+                    "fontSize": 24,
+                  }
+                }
+              >
+                
+                 Shares
+              </Text>
+            </View>,
+            <View
+              style={
+                Object {
+                  "flex": 0.55,
+                  "margin": 5,
+                }
+              }
+            >
+              <FlatList
+                data={
+                  Array [
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2550",
+                        "2. high": "94.3300",
+                        "3. low": "94.1700",
+                        "4. close": "94.1800",
+                        "5. volume": "2415049",
+                      },
+                      "date": "2018-03-14 16:00:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-13 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-12 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-11 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-10 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-09 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-08 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.1400",
+                        "2. high": "94.2100",
+                        "3. low": "94.1300",
+                        "4. close": "94.2050",
+                        "5. volume": "381419",
+                      },
+                      "date": "2018-03-05 15:56:00",
+                    },
+                  ]
+                }
+                disableVirtualization={false}
+                horizontal={false}
+                initialNumToRender={10}
+                keyExtractor={[Function]}
+                maxToRenderPerBatch={10}
+                numColumns={1}
+                onEndReachedThreshold={2}
+                onViewableItemsChanged={[Function]}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                updateCellsBatchingPeriod={50}
+                windowSize={21}
+              />
+            </View>,
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 20,
+                    "fontWeight": "900",
+                  }
+                }
+              >
+                ↓
+              </Text>
+            </View>,
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                The Highest value, 
+                94.33
+                , at any point for -
+                 
+                
+                 
+              </Text>
+            </View>,
+          ],
+          "style": Object {
+            "flex": 0.45,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontFamily": "Futura",
+                    "fontSize": 24,
+                  }
+                }
+              >
+                
+                 Shares
+              </Text>,
+              "style": Object {
+                "alignItems": "center",
+                "flex": 0.2,
+                "justifyContent": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": Array [
+                  "",
+                  " Shares",
+                ],
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontFamily": "Futura",
+                  "fontSize": 24,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                "",
+                " Shares",
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <FlatList
+                data={
+                  Array [
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2550",
+                        "2. high": "94.3300",
+                        "3. low": "94.1700",
+                        "4. close": "94.1800",
+                        "5. volume": "2415049",
+                      },
+                      "date": "2018-03-14 16:00:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-13 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-12 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-11 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-10 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-09 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-08 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.1400",
+                        "2. high": "94.2100",
+                        "3. low": "94.1300",
+                        "4. close": "94.2050",
+                        "5. volume": "381419",
+                      },
+                      "date": "2018-03-05 15:56:00",
+                    },
+                  ]
+                }
+                disableVirtualization={false}
+                horizontal={false}
+                initialNumToRender={10}
+                keyExtractor={[Function]}
+                maxToRenderPerBatch={10}
+                numColumns={1}
+                onEndReachedThreshold={2}
+                onViewableItemsChanged={[Function]}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                updateCellsBatchingPeriod={50}
+                windowSize={21}
+              />,
+              "style": Object {
+                "flex": 0.55,
+                "margin": 5,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "data": Array [
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2550",
+                      "2. high": "94.3300",
+                      "3. low": "94.1700",
+                      "4. close": "94.1800",
+                      "5. volume": "2415049",
+                    },
+                    "date": "2018-03-14 16:00:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2700",
+                      "2. high": "94.3000",
+                      "3. low": "94.2100",
+                      "4. close": "94.2550",
+                      "5. volume": "217935",
+                    },
+                    "date": "2018-03-13 15:59:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2400",
+                      "2. high": "94.3000",
+                      "3. low": "94.2300",
+                      "4. close": "94.2700",
+                      "5. volume": "143333",
+                    },
+                    "date": "2018-03-12 15:58:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2050",
+                      "2. high": "94.2500",
+                      "3. low": "94.1900",
+                      "4. close": "94.2350",
+                      "5. volume": "277754",
+                    },
+                    "date": "2018-03-11 15:57:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2700",
+                      "2. high": "94.3000",
+                      "3. low": "94.2100",
+                      "4. close": "94.2550",
+                      "5. volume": "217935",
+                    },
+                    "date": "2018-03-10 15:59:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2400",
+                      "2. high": "94.3000",
+                      "3. low": "94.2300",
+                      "4. close": "94.2700",
+                      "5. volume": "143333",
+                    },
+                    "date": "2018-03-09 15:58:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.2050",
+                      "2. high": "94.2500",
+                      "3. low": "94.1900",
+                      "4. close": "94.2350",
+                      "5. volume": "277754",
+                    },
+                    "date": "2018-03-08 15:57:00",
+                  },
+                  Object {
+                    "data": Object {
+                      "1. open": "94.1400",
+                      "2. high": "94.2100",
+                      "3. low": "94.1300",
+                      "4. close": "94.2050",
+                      "5. volume": "381419",
+                    },
+                    "date": "2018-03-05 15:56:00",
+                  },
+                ],
+                "disableVirtualization": false,
+                "horizontal": false,
+                "initialNumToRender": 10,
+                "keyExtractor": [Function],
+                "maxToRenderPerBatch": 10,
+                "numColumns": 1,
+                "onEndReachedThreshold": 2,
+                "onViewableItemsChanged": [Function],
+                "renderItem": [Function],
+                "scrollEventThrottle": 50,
+                "updateCellsBatchingPeriod": 50,
+                "windowSize": 21,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 20,
+                    "fontWeight": "900",
+                  }
+                }
+              >
+                ↓
+              </Text>,
+              "style": Object {
+                "alignItems": "center",
+                "flex": 0.1,
+                "justifyContent": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "↓",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontSize": 20,
+                  "fontWeight": "900",
+                },
+              },
+              "ref": null,
+              "rendered": "↓",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                The Highest value, 
+                94.33
+                , at any point for -
+                 
+                
+                 
+              </Text>,
+              "style": Object {
+                "alignItems": "center",
+                "flex": 0.2,
+                "justifyContent": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": Array [
+                  "The Highest value, ",
+                  94.33,
+                  ", at any point for -",
+                  " ",
+                  "",
+                  " ",
+                ],
+                "ellipsizeMode": "tail",
+              },
+              "ref": null,
+              "rendered": Array [
+                "The Highest value, ",
+                94.33,
+                ", at any point for -",
+                " ",
+                "",
+                " ",
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -146,6 +988,190 @@ ShallowWrapper {
               type="search"
               value=""
             />
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 0.45,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontFamily": "Futura",
+                    "fontSize": 24,
+                  }
+                }
+              >
+                
+                 Shares
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 0.55,
+                  "margin": 5,
+                }
+              }
+            >
+              <FlatList
+                data={
+                  Array [
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2550",
+                        "2. high": "94.3300",
+                        "3. low": "94.1700",
+                        "4. close": "94.1800",
+                        "5. volume": "2415049",
+                      },
+                      "date": "2018-03-14 16:00:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-13 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-12 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-11 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-10 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-09 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-08 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.1400",
+                        "2. high": "94.2100",
+                        "3. low": "94.1300",
+                        "4. close": "94.2050",
+                        "5. volume": "381419",
+                      },
+                      "date": "2018-03-05 15:56:00",
+                    },
+                  ]
+                }
+                disableVirtualization={false}
+                horizontal={false}
+                initialNumToRender={10}
+                keyExtractor={[Function]}
+                maxToRenderPerBatch={10}
+                numColumns={1}
+                onEndReachedThreshold={2}
+                onViewableItemsChanged={[Function]}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                updateCellsBatchingPeriod={50}
+                windowSize={21}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 20,
+                    "fontWeight": "900",
+                  }
+                }
+              >
+                ↓
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                The Highest value, 
+                94.33
+                , at any point for -
+                 
+                
+                 
+              </Text>
+            </View>
           </View>,
         ],
         "style": Object {
@@ -208,6 +1234,564 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 0.2,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontFamily": "Futura",
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  
+                   Shares
+                </Text>
+              </View>,
+              <View
+                style={
+                  Object {
+                    "flex": 0.55,
+                    "margin": 5,
+                  }
+                }
+              >
+                <FlatList
+                  data={
+                    Array [
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2550",
+                          "2. high": "94.3300",
+                          "3. low": "94.1700",
+                          "4. close": "94.1800",
+                          "5. volume": "2415049",
+                        },
+                        "date": "2018-03-14 16:00:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2700",
+                          "2. high": "94.3000",
+                          "3. low": "94.2100",
+                          "4. close": "94.2550",
+                          "5. volume": "217935",
+                        },
+                        "date": "2018-03-13 15:59:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2400",
+                          "2. high": "94.3000",
+                          "3. low": "94.2300",
+                          "4. close": "94.2700",
+                          "5. volume": "143333",
+                        },
+                        "date": "2018-03-12 15:58:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2050",
+                          "2. high": "94.2500",
+                          "3. low": "94.1900",
+                          "4. close": "94.2350",
+                          "5. volume": "277754",
+                        },
+                        "date": "2018-03-11 15:57:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2700",
+                          "2. high": "94.3000",
+                          "3. low": "94.2100",
+                          "4. close": "94.2550",
+                          "5. volume": "217935",
+                        },
+                        "date": "2018-03-10 15:59:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2400",
+                          "2. high": "94.3000",
+                          "3. low": "94.2300",
+                          "4. close": "94.2700",
+                          "5. volume": "143333",
+                        },
+                        "date": "2018-03-09 15:58:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2050",
+                          "2. high": "94.2500",
+                          "3. low": "94.1900",
+                          "4. close": "94.2350",
+                          "5. volume": "277754",
+                        },
+                        "date": "2018-03-08 15:57:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.1400",
+                          "2. high": "94.2100",
+                          "3. low": "94.1300",
+                          "4. close": "94.2050",
+                          "5. volume": "381419",
+                        },
+                        "date": "2018-03-05 15:56:00",
+                      },
+                    ]
+                  }
+                  disableVirtualization={false}
+                  horizontal={false}
+                  initialNumToRender={10}
+                  keyExtractor={[Function]}
+                  maxToRenderPerBatch={10}
+                  numColumns={1}
+                  onEndReachedThreshold={2}
+                  onViewableItemsChanged={[Function]}
+                  renderItem={[Function]}
+                  scrollEventThrottle={50}
+                  updateCellsBatchingPeriod={50}
+                  windowSize={21}
+                />
+              </View>,
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 0.1,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 20,
+                      "fontWeight": "900",
+                    }
+                  }
+                >
+                  ↓
+                </Text>
+              </View>,
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flex": 0.2,
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  The Highest value, 
+                  94.33
+                  , at any point for -
+                   
+                  
+                   
+                </Text>
+              </View>,
+            ],
+            "style": Object {
+              "flex": 0.45,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontFamily": "Futura",
+                      "fontSize": 24,
+                    }
+                  }
+                >
+                  
+                   Shares
+                </Text>,
+                "style": Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": Array [
+                    "",
+                    " Shares",
+                  ],
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "fontFamily": "Futura",
+                    "fontSize": 24,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  "",
+                  " Shares",
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <FlatList
+                  data={
+                    Array [
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2550",
+                          "2. high": "94.3300",
+                          "3. low": "94.1700",
+                          "4. close": "94.1800",
+                          "5. volume": "2415049",
+                        },
+                        "date": "2018-03-14 16:00:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2700",
+                          "2. high": "94.3000",
+                          "3. low": "94.2100",
+                          "4. close": "94.2550",
+                          "5. volume": "217935",
+                        },
+                        "date": "2018-03-13 15:59:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2400",
+                          "2. high": "94.3000",
+                          "3. low": "94.2300",
+                          "4. close": "94.2700",
+                          "5. volume": "143333",
+                        },
+                        "date": "2018-03-12 15:58:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2050",
+                          "2. high": "94.2500",
+                          "3. low": "94.1900",
+                          "4. close": "94.2350",
+                          "5. volume": "277754",
+                        },
+                        "date": "2018-03-11 15:57:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2700",
+                          "2. high": "94.3000",
+                          "3. low": "94.2100",
+                          "4. close": "94.2550",
+                          "5. volume": "217935",
+                        },
+                        "date": "2018-03-10 15:59:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2400",
+                          "2. high": "94.3000",
+                          "3. low": "94.2300",
+                          "4. close": "94.2700",
+                          "5. volume": "143333",
+                        },
+                        "date": "2018-03-09 15:58:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.2050",
+                          "2. high": "94.2500",
+                          "3. low": "94.1900",
+                          "4. close": "94.2350",
+                          "5. volume": "277754",
+                        },
+                        "date": "2018-03-08 15:57:00",
+                      },
+                      Object {
+                        "data": Object {
+                          "1. open": "94.1400",
+                          "2. high": "94.2100",
+                          "3. low": "94.1300",
+                          "4. close": "94.2050",
+                          "5. volume": "381419",
+                        },
+                        "date": "2018-03-05 15:56:00",
+                      },
+                    ]
+                  }
+                  disableVirtualization={false}
+                  horizontal={false}
+                  initialNumToRender={10}
+                  keyExtractor={[Function]}
+                  maxToRenderPerBatch={10}
+                  numColumns={1}
+                  onEndReachedThreshold={2}
+                  onViewableItemsChanged={[Function]}
+                  renderItem={[Function]}
+                  scrollEventThrottle={50}
+                  updateCellsBatchingPeriod={50}
+                  windowSize={21}
+                />,
+                "style": Object {
+                  "flex": 0.55,
+                  "margin": 5,
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "data": Array [
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2550",
+                        "2. high": "94.3300",
+                        "3. low": "94.1700",
+                        "4. close": "94.1800",
+                        "5. volume": "2415049",
+                      },
+                      "date": "2018-03-14 16:00:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-13 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-12 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-11 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2700",
+                        "2. high": "94.3000",
+                        "3. low": "94.2100",
+                        "4. close": "94.2550",
+                        "5. volume": "217935",
+                      },
+                      "date": "2018-03-10 15:59:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2400",
+                        "2. high": "94.3000",
+                        "3. low": "94.2300",
+                        "4. close": "94.2700",
+                        "5. volume": "143333",
+                      },
+                      "date": "2018-03-09 15:58:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.2050",
+                        "2. high": "94.2500",
+                        "3. low": "94.1900",
+                        "4. close": "94.2350",
+                        "5. volume": "277754",
+                      },
+                      "date": "2018-03-08 15:57:00",
+                    },
+                    Object {
+                      "data": Object {
+                        "1. open": "94.1400",
+                        "2. high": "94.2100",
+                        "3. low": "94.1300",
+                        "4. close": "94.2050",
+                        "5. volume": "381419",
+                      },
+                      "date": "2018-03-05 15:56:00",
+                    },
+                  ],
+                  "disableVirtualization": false,
+                  "horizontal": false,
+                  "initialNumToRender": 10,
+                  "keyExtractor": [Function],
+                  "maxToRenderPerBatch": 10,
+                  "numColumns": 1,
+                  "onEndReachedThreshold": 2,
+                  "onViewableItemsChanged": [Function],
+                  "renderItem": [Function],
+                  "scrollEventThrottle": 50,
+                  "updateCellsBatchingPeriod": 50,
+                  "windowSize": 21,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontSize": 20,
+                      "fontWeight": "900",
+                    }
+                  }
+                >
+                  ↓
+                </Text>,
+                "style": Object {
+                  "alignItems": "center",
+                  "flex": 0.1,
+                  "justifyContent": "center",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "↓",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "fontSize": 20,
+                    "fontWeight": "900",
+                  },
+                },
+                "ref": null,
+                "rendered": "↓",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  The Highest value, 
+                  94.33
+                  , at any point for -
+                   
+                  
+                   
+                </Text>,
+                "style": Object {
+                  "alignItems": "center",
+                  "flex": 0.2,
+                  "justifyContent": "center",
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": Array [
+                    "The Highest value, ",
+                    94.33,
+                    ", at any point for -",
+                    " ",
+                    "",
+                    " ",
+                  ],
+                  "ellipsizeMode": "tail",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "The Highest value, ",
+                  94.33,
+                  ", at any point for -",
+                  " ",
+                  "",
+                  " ",
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
       ],

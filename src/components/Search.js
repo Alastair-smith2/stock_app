@@ -105,6 +105,11 @@ const styles = StyleSheet.create({
   padding: {
     flex: 0.05
   },
+  alternative: {
+    flex: 0.5,
+    flexDirection: "row",
+    justifyContent: "center"
+  },
   buttonContainer: {
     flex: 1
   },
