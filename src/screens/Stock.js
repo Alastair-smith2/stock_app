@@ -4,15 +4,26 @@ import Button from "../components/Button";
 import Search from "../components/Search";
 import StockItem from "../components/StockItem";
 import Instructions from "../components/Instructions";
+import Loading from "../components/Loading";
+import Error from "../components/Error";
+import { connect } from "react-redux";
+import { initialFetchData, fetchStock } from "../actions/index";
 
 export class Stock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: ""
+      search: "",
+      readMore: true
     };
     this.handleTextChange = this.handleTextChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleListChange = this.handleListChange.bind(this);
+    this.startAgain = this.startAgain.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.initialFetchData();
   }
 
   handleTextChange = (type, text) => {
@@ -22,7 +33,7 @@ export class Stock extends Component {
 
   handleSearch = () => {
     if (!this.state.search == "") {
-      Alert.alert("Fetch to come");
+      this.props.fetchStock(this.state.search);
     } else {
       Alert.alert(
         "Please make sure you have entered a stock code to search for"
@@ -30,7 +41,74 @@ export class Stock extends Component {
     }
   };
 
+  keyExtractor = (item, index) => item.date;
+
+  renderItem = ({ item }) => {
+    return <StockItem item={item} />;
+  };
+
+  endReached = props => {
+    console.log(props, "What is the prop?");
+    if (props.distanceFromEnd >= -5.5) {
+      this.setState({ readMore: false });
+    }
+  };
+
+  handleListChange = props => {
+    console.log(props, "props from handle list");
+    let lengthOfData = this.props.appData.stockData.length - 1;
+    let lengthOfVisible = props.viewableItems.length - 1;
+    console.log(lengthOfData);
+    console.log(lengthOfVisible, "What is this?");
+    console.log(lengthOfVisible >= 0, "Greater or equal than 0?");
+
+    // if the length is less than 0 (what happens when you scroll past the bottom) then the item becomes undefined, no key available
+    if (lengthOfVisible >= 0 && lengthOfData >= 0) {
+      console.log("Greater or equal than 0");
+      if (
+        props.viewableItems[lengthOfVisible]["key"] !==
+        this.props.appData.stockData[lengthOfData].date
+      ) {
+        this.setState({ readMore: true });
+      } else {
+        this.setState({ readMore: false });
+      }
+    }
+  };
+
+  startAgain() {
+    this.props.initialFetchData();
+  }
+
   render() {
+    if (this.props.appData.isFetching) {
+      return <Loading />;
+    }
+
+    if (this.props.appData.error) {
+      return (
+        <View style={styles.center}>
+          <Error
+            errorType={"stock"}
+            instructionLabel={"Please enter a stock symbol"}
+            searchLabel={"Please enter a stock symbol"}
+            search={this.state.search}
+            submitSearch={this.handleSearch}
+            onTextSearch={this.handleTextChange}
+            startAgain={this.startAgain}
+          />
+        </View>
+      );
+    }
+    let sumTotal;
+    if (this.props.appData.stockData.length >= 1) {
+      let test = this.props.appData.stockData.map(item => {
+        return item.data["2. high"];
+      });
+      let highest = Math.max(...test);
+      sumTotal = highest;
+    }
+
     return (
       <View style={styles.container}>
         <Instructions
@@ -48,6 +126,36 @@ export class Stock extends Component {
             onTextSearch={this.handleTextChange}
           />
         </View>
+        {this.props.appData.stockData.length >= 1 && (
+          <View style={styles.stockData}>
+            <View style={styles.introContainer}>
+              <Text style={styles.intro}>
+                {this.props.appData.stockCode} Shares
+              </Text>
+            </View>
+            <View style={styles.flatList}>
+              <FlatList
+                onViewableItemsChanged={this.handleListChange}
+                data={this.props.appData.stockData}
+                keyExtractor={this.keyExtractor}
+                renderItem={this.renderItem}
+              />
+            </View>
+            {this.state.readMore ? (
+              <View style={styles.more}>
+                <Text style={styles.moreSign}>&darr;</Text>
+              </View>
+            ) : (
+              <View style={styles.more} />
+            )}
+            <View style={styles.highest}>
+              <Text>
+                The Highest value, {sumTotal}, at any point for -{" "}
+                {this.props.appData.stockCode}{" "}
+              </Text>
+            </View>
+          </View>
+        )}
       </View>
     );
   }
@@ -63,9 +171,71 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
+  instruction: {
+    fontSize: 18,
+    textAlign: "center"
+  },
+  stockData: {
+    flex: 0.45
+  },
+  flatList: {
+    flex: 0.55,
+    margin: 5
+  },
+  introContainer: {
+    flex: 0.2,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  intro: {
+    fontSize: 24,
+    fontFamily: "Futura"
+  },
   searchContainer: {
     flex: 0.3,
     margin: 10
+  },
+  more: {
+    flex: 0.1,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  moreSign: {
+    fontSize: 20,
+    fontWeight: "900"
+  },
+  highest: {
+    flex: 0.2,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  center: {
+    flex: 1,
+    backgroundColor: "#fff"
+  },
+  loading: {
+    color: "blue"
+  },
+  error: {
+    color: "red",
+    textAlign: "center",
+    fontFamily: "Futura"
+  },
+  errorContainer: {
+    margin: 20
+  },
+  errorMessage: {
+    flex: 0.1,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  errorSearch: {
+    flex: 0.3
+  },
+  alternative: {
+    flex: 0.14,
+    flexDirection: "row",
+    justifyContent: "center"
   }
 });
 
@@ -84,4 +254,18 @@ Stock.navigationOptions = {
   headerLeft: null
 };
 
-export default Stock;
+export function mapStateToProps(state) {
+  console.log(state, "What is this state?");
+  return {
+    appData: state.appData
+  };
+}
+
+export function mapDispatchToProps(dispatch) {
+  return {
+    initialFetchData: () => dispatch(initialFetchData()),
+    fetchStock: stockId => dispatch(fetchStock(stockId))
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stock);

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { connect } from "react-redux";
+import { login } from "../actions/index";
 import { NavigationActions } from "react-navigation";
 
 export class Login extends Component {
@@ -21,6 +23,7 @@ export class Login extends Component {
 
   handleNavigation = () => {
     if (this.state.password == "Pass" && this.state.username == "Admin") {
+      this.props.login();
       const resetAction = NavigationActions.reset({
         index: 0,
         actions: [NavigationActions.navigate({ routeName: "Dashboard" })]
@@ -100,8 +103,7 @@ const styles = StyleSheet.create({
 Login.navigationOptions = {
   title: "Login",
   headerStyle: {
-    backgroundColor: "#EA572D",
-    paddingBottom: 10
+    backgroundColor: "#EA572D"
   },
   headerTitleStyle: {
     color: "#FFF",
@@ -111,3 +113,17 @@ Login.navigationOptions = {
   },
   headerTintColor: "#fff"
 };
+
+export function mapStateToProps(state) {
+  return {
+    appData: state.appData
+  };
+}
+
+export function mapDispatchToProps(dispatch) {
+  return {
+    login: () => dispatch(login())
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

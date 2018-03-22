@@ -5,6 +5,18 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Exchange
+    appData={
+      Object {
+        "authenticated": false,
+        "currencyData": null,
+        "dataFetched": false,
+        "error": false,
+        "isFetching": false,
+        "stockCode": "",
+        "stockData": Array [],
+      }
+    }
+    fetchCurrency={[MockFunction]}
     navigation={
       Object {
         "navigate": [MockFunction],
@@ -55,6 +67,7 @@ ShallowWrapper {
             typeTwo="currencyTwo"
           />
         </View>,
+        null,
       ],
       "style": Object {
         "backgroundColor": "#fff",
@@ -124,6 +137,7 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      null,
     ],
     "type": [Function],
   },
@@ -165,6 +179,7 @@ ShallowWrapper {
               typeTwo="currencyTwo"
             />
           </View>,
+          null,
         ],
         "style": Object {
           "backgroundColor": "#fff",
@@ -234,6 +249,7 @@ ShallowWrapper {
           },
           "type": [Function],
         },
+        null,
       ],
       "type": [Function],
     },

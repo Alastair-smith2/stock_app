@@ -2,18 +2,47 @@ import React from "react";
 import { shallow } from "enzyme";
 import Button from "../src/components/Button.js";
 import Input from "../src/components/Input.js";
-import { Login } from "../src/screens/Login.js";
+import {
+  Login,
+  mapDispatchToProps,
+  mapStateToProps
+} from "../src/screens/Login.js";
 
 describe("The Login screen", () => {
   let wrapper;
   let navigation = {
     dispatch: jest.fn()
   };
+  let appData = {
+    authenticated: false,
+    stockData: [],
+    stockCode: "",
+    currencyData: null,
+    dataFetched: false,
+    isFetching: false,
+    error: false
+  };
+  let login = jest.fn();
+
+  let initialState = {
+    appData: {
+      authenticated: false,
+      stockData: [],
+      stockCode: "",
+      currencyData: null,
+      dataFetched: false,
+      isFetching: false,
+      error: false
+    }
+  };
 
   beforeEach(() => {
-    wrapper = shallow(<Login navigation={navigation} />);
+    wrapper = shallow(
+      <Login appData={appData} navigation={navigation} login={login} />
+    );
     wrapper.setState({ username: "", password: "" });
     navigation.dispatch.mockReset();
+    login.mockReset();
   });
   describe("It should render", () => {
     it("Should render", () => {
@@ -27,8 +56,22 @@ describe("The Login screen", () => {
     });
 
     it("Should have a Button component", () => {
-      console.log(wrapper.find(Button));
       expect(wrapper.find(Button)).toHaveLength(1);
+    });
+
+    it("On pressing the Button should dispatch to the next page", () => {
+      wrapper
+        .find(Button)
+        .props()
+        .buttonPress();
+      expect(login.mock.calls.length).toEqual(0);
+      wrapper.setState({ username: "Admin", password: "Pass" });
+      wrapper
+        .find(Button)
+        .props()
+        .buttonPress();
+      expect(navigation.dispatch.mock.calls.length).toEqual(1);
+      expect(login.mock.calls.length).toEqual(1);
     });
 
     it("Should an initial state that is a pair of empty strings", () => {
@@ -36,24 +79,25 @@ describe("The Login screen", () => {
       expect(wrapper.state("password")).toEqual("");
     });
 
-    it("With a valid username and password should dispatch to the next page", () => {
-      wrapper
-        .find(Button)
-        .props()
-        .buttonPress();
-      expect(navigation.dispatch.mock.calls.length).toEqual(0);
-      wrapper.setState({ username: "Admin", password: "Pass" });
-
-      wrapper
-        .find(Button)
-        .props()
-        .buttonPress();
-      expect(navigation.dispatch.mock.calls.length).toEqual(1);
-    });
-
     it("Should have a function that handles the textChange", () => {
       wrapper.instance().handleTextChange("username", "Alastair");
       expect(wrapper.state("username")).toEqual("Alastair");
+    });
+  });
+
+  describe("Redux connect", () => {
+    it("should call fetch data action via mapDispatchToProps", () => {
+      const dispatchSpy = jest.fn();
+      const { login } = mapDispatchToProps(dispatchSpy);
+      login();
+      expect(dispatchSpy.mock.calls.length).toEqual(1);
+    });
+
+    it("Should return the same state as props via mapStateToProps", () => {
+      let initialData = {
+        appData: 1
+      };
+      expect(mapStateToProps(initialData).appData).toEqual(initialData.appData);
     });
   });
 });

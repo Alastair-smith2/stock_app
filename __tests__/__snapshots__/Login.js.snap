@@ -5,6 +5,18 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Login
+    appData={
+      Object {
+        "authenticated": false,
+        "currencyData": null,
+        "dataFetched": false,
+        "error": false,
+        "isFetching": false,
+        "stockCode": "",
+        "stockData": Array [],
+      }
+    }
+    login={[MockFunction]}
     navigation={
       Object {
         "dispatch": [MockFunction],
