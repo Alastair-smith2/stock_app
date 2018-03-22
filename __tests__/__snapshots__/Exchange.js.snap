@@ -61,6 +61,7 @@ ShallowWrapper {
             labelOne="From"
             labelTwo="To"
             onTextSearch={[Function]}
+            placeholder="Please enter a currency"
             searchType="currency"
             submitSearch={[Function]}
             typeOne="currencyOne"
@@ -104,6 +105,7 @@ ShallowWrapper {
             labelOne="From"
             labelTwo="To"
             onTextSearch={[Function]}
+            placeholder="Please enter a currency"
             searchType="currency"
             submitSearch={[Function]}
             typeOne="currencyOne"
@@ -126,6 +128,7 @@ ShallowWrapper {
             "labelOne": "From",
             "labelTwo": "To",
             "onTextSearch": [Function],
+            "placeholder": "Please enter a currency",
             "searchType": "currency",
             "submitSearch": [Function],
             "typeOne": "currencyOne",
@@ -173,6 +176,7 @@ ShallowWrapper {
               labelOne="From"
               labelTwo="To"
               onTextSearch={[Function]}
+              placeholder="Please enter a currency"
               searchType="currency"
               submitSearch={[Function]}
               typeOne="currencyOne"
@@ -216,6 +220,7 @@ ShallowWrapper {
               labelOne="From"
               labelTwo="To"
               onTextSearch={[Function]}
+              placeholder="Please enter a currency"
               searchType="currency"
               submitSearch={[Function]}
               typeOne="currencyOne"
@@ -238,6 +243,7 @@ ShallowWrapper {
               "labelOne": "From",
               "labelTwo": "To",
               "onTextSearch": [Function],
+              "placeholder": "Please enter a currency",
               "searchType": "currency",
               "submitSearch": [Function],
               "typeOne": "currencyOne",

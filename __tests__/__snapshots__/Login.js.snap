@@ -51,6 +51,7 @@ ShallowWrapper {
             ellipsizeMode="tail"
             style={
               Object {
+                "color": "black",
                 "fontFamily": "Futura",
                 "fontSize": 24,
                 "fontWeight": "500",
@@ -71,6 +72,7 @@ ShallowWrapper {
           <Input
             label="Username"
             onTextInput={[Function]}
+            placeholder="Please enter your username"
             type="username"
             value=""
           />
@@ -86,6 +88,7 @@ ShallowWrapper {
           <Input
             label="Password"
             onTextInput={[Function]}
+            placeholder="Please enter your password"
             type="password"
             value=""
           />
@@ -134,6 +137,7 @@ ShallowWrapper {
             ellipsizeMode="tail"
             style={
               Object {
+                "color": "black",
                 "fontFamily": "Futura",
                 "fontSize": 24,
                 "fontWeight": "500",
@@ -159,6 +163,7 @@ ShallowWrapper {
             "children": "Stock & Exchange Search",
             "ellipsizeMode": "tail",
             "style": Object {
+              "color": "black",
               "fontFamily": "Futura",
               "fontSize": 24,
               "fontWeight": "500",
@@ -178,6 +183,7 @@ ShallowWrapper {
           "children": <Input
             label="Username"
             onTextInput={[Function]}
+            placeholder="Please enter your username"
             type="username"
             value=""
           />,
@@ -194,6 +200,7 @@ ShallowWrapper {
           "props": Object {
             "label": "Username",
             "onTextInput": [Function],
+            "placeholder": "Please enter your username",
             "type": "username",
             "value": "",
           },
@@ -211,6 +218,7 @@ ShallowWrapper {
           "children": <Input
             label="Password"
             onTextInput={[Function]}
+            placeholder="Please enter your password"
             type="password"
             value=""
           />,
@@ -227,6 +235,7 @@ ShallowWrapper {
           "props": Object {
             "label": "Password",
             "onTextInput": [Function],
+            "placeholder": "Please enter your password",
             "type": "password",
             "value": "",
           },
@@ -310,6 +319,7 @@ ShallowWrapper {
               ellipsizeMode="tail"
               style={
                 Object {
+                  "color": "black",
                   "fontFamily": "Futura",
                   "fontSize": 24,
                   "fontWeight": "500",
@@ -330,6 +340,7 @@ ShallowWrapper {
             <Input
               label="Username"
               onTextInput={[Function]}
+              placeholder="Please enter your username"
               type="username"
               value=""
             />
@@ -345,6 +356,7 @@ ShallowWrapper {
             <Input
               label="Password"
               onTextInput={[Function]}
+              placeholder="Please enter your password"
               type="password"
               value=""
             />
@@ -393,6 +405,7 @@ ShallowWrapper {
               ellipsizeMode="tail"
               style={
                 Object {
+                  "color": "black",
                   "fontFamily": "Futura",
                   "fontSize": 24,
                   "fontWeight": "500",
@@ -418,6 +431,7 @@ ShallowWrapper {
               "children": "Stock & Exchange Search",
               "ellipsizeMode": "tail",
               "style": Object {
+                "color": "black",
                 "fontFamily": "Futura",
                 "fontSize": 24,
                 "fontWeight": "500",
@@ -437,6 +451,7 @@ ShallowWrapper {
             "children": <Input
               label="Username"
               onTextInput={[Function]}
+              placeholder="Please enter your username"
               type="username"
               value=""
             />,
@@ -453,6 +468,7 @@ ShallowWrapper {
             "props": Object {
               "label": "Username",
               "onTextInput": [Function],
+              "placeholder": "Please enter your username",
               "type": "username",
               "value": "",
             },
@@ -470,6 +486,7 @@ ShallowWrapper {
             "children": <Input
               label="Password"
               onTextInput={[Function]}
+              placeholder="Please enter your password"
               type="password"
               value=""
             />,
@@ -486,6 +503,7 @@ ShallowWrapper {
             "props": Object {
               "label": "Password",
               "onTextInput": [Function],
+              "placeholder": "Please enter your password",
               "type": "password",
               "value": "",
             },

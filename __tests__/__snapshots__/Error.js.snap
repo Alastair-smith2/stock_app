@@ -38,7 +38,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "red",
+              }
+            }
           >
             There was an error loading the data
           </Text>
@@ -66,6 +70,7 @@ ShallowWrapper {
             error={true}
             label={undefined}
             onTextSearch={[Function]}
+            placeholder="Please enter a stock code"
             restart={[Function]}
             searchType="stock"
             submitSearch={[Function]}
@@ -90,7 +95,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "red",
+              }
+            }
           >
             There was an error loading the data
           </Text>,
@@ -110,7 +119,9 @@ ShallowWrapper {
             "allowFontScaling": true,
             "children": "There was an error loading the data",
             "ellipsizeMode": "tail",
-            "style": undefined,
+            "style": Object {
+              "color": "red",
+            },
           },
           "ref": null,
           "rendered": "There was an error loading the data",
@@ -143,6 +154,7 @@ ShallowWrapper {
             error={true}
             label={undefined}
             onTextSearch={[Function]}
+            placeholder="Please enter a stock code"
             restart={[Function]}
             searchType="stock"
             submitSearch={[Function]}
@@ -164,6 +176,7 @@ ShallowWrapper {
             "error": true,
             "label": undefined,
             "onTextSearch": [Function],
+            "placeholder": "Please enter a stock code",
             "restart": [Function],
             "searchType": "stock",
             "submitSearch": [Function],
@@ -199,7 +212,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "red",
+                }
+              }
             >
               There was an error loading the data
             </Text>
@@ -227,6 +244,7 @@ ShallowWrapper {
               error={true}
               label={undefined}
               onTextSearch={[Function]}
+              placeholder="Please enter a stock code"
               restart={[Function]}
               searchType="stock"
               submitSearch={[Function]}
@@ -251,7 +269,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "red",
+                }
+              }
             >
               There was an error loading the data
             </Text>,
@@ -271,7 +293,9 @@ ShallowWrapper {
               "allowFontScaling": true,
               "children": "There was an error loading the data",
               "ellipsizeMode": "tail",
-              "style": undefined,
+              "style": Object {
+                "color": "red",
+              },
             },
             "ref": null,
             "rendered": "There was an error loading the data",
@@ -304,6 +328,7 @@ ShallowWrapper {
               error={true}
               label={undefined}
               onTextSearch={[Function]}
+              placeholder="Please enter a stock code"
               restart={[Function]}
               searchType="stock"
               submitSearch={[Function]}
@@ -325,6 +350,7 @@ ShallowWrapper {
               "error": true,
               "label": undefined,
               "onTextSearch": [Function],
+              "placeholder": "Please enter a stock code",
               "restart": [Function],
               "searchType": "stock",
               "submitSearch": [Function],

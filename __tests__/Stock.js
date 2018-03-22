@@ -170,18 +170,15 @@ describe("The Stock screen", () => {
         let testItem = {
           date: "2018-03-05"
         };
-        // console.log(wrapper.instance().keyExtractor(testItem));
         expect(wrapper.instance().keyExtractor(testItem)).toEqual(
           testItem.date
         );
       });
 
       it("Should have a FlatList renderItem function", () => {
-        // console.log(wrapper.instance(), "Flat list");
         let item = {
           data: "Test"
         };
-        // console.log(wrapper.instance().renderItem({ item }), "Test item");
         expect(wrapper.instance().renderItem({ item })).toEqual(
           <StockItem item={item} />
         );
@@ -207,10 +204,6 @@ describe("The Stock screen", () => {
           ]
         };
         wrapper.instance().handleListChange(dataBottom);
-        // console.log(wrapper.instance(), "the instance");
-        // console.log(wrapper.instance().props.appData.stockData);
-        // console.log(wrapper.state("readMore"));
-        // console.log(wrapper.find("FlatList").props(), "Props of flatlist");
         expect(wrapper.state("readMore")).toEqual(false);
         let dataMore = {
           viewableItems: [
@@ -264,7 +257,6 @@ describe("The Stock screen", () => {
 
       it("Should be able to start over", () => {
         wrapper.setProps({ appData: errorData });
-        console.log(wrapper.find("Error").props(), "What is this?");
         wrapper
           .find("Error")
           .props()
@@ -274,7 +266,6 @@ describe("The Stock screen", () => {
     });
 
     it("Should have an instruction component", () => {
-      // console.log(wrapper.props(), "What are the props?");
       expect(wrapper.find(Instructions)).toHaveLength(1);
     });
 
@@ -284,7 +275,6 @@ describe("The Stock screen", () => {
     });
 
     it("Should have a function that handles the textChange", () => {
-      // console.log(wrapper.instance(), "instance");
       wrapper.instance().handleTextChange("search", "Alastair");
       expect(wrapper.state("search")).toEqual("Alastair");
     });
@@ -299,10 +289,8 @@ describe("The Stock screen", () => {
 
       it("Should call a fetch stock action", () => {
         const dispatchSpy = jest.fn();
-        // console.log(mapDispatchToProps(), "What is this?");
         const { fetchStock } = mapDispatchToProps(dispatchSpy);
         fetchStock();
-        // console.log(dispatchSpy.mock, "What is this mock");
         expect(dispatchSpy.mock.calls.length).toEqual(1);
       });
 
@@ -310,7 +298,6 @@ describe("The Stock screen", () => {
         let initialData = {
           appData: 1
         };
-        // console.log(mapStateToProps(initialData).appData, "What is this?");
         expect(mapStateToProps(initialData).appData).toEqual(
           initialData.appData
         );

@@ -17,18 +17,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "blue",
-          }
-        }
-      >
-        Loading
-      </Text>,
+      "children": <ActivityIndicator
+        animating={true}
+        color="#EA572D"
+        hidesWhenStopped={true}
+        size="large"
+      />,
       "style": Object {
         "alignItems": "center",
         "flex": 1,
@@ -41,16 +35,13 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "accessible": true,
-        "allowFontScaling": true,
-        "children": "Loading",
-        "ellipsizeMode": "tail",
-        "style": Object {
-          "color": "blue",
-        },
+        "animating": true,
+        "color": "#EA572D",
+        "hidesWhenStopped": true,
+        "size": "large",
       },
       "ref": null,
-      "rendered": "Loading",
+      "rendered": null,
       "type": [Function],
     },
     "type": [Function],
@@ -61,18 +52,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "blue",
-            }
-          }
-        >
-          Loading
-        </Text>,
+        "children": <ActivityIndicator
+          animating={true}
+          color="#EA572D"
+          hidesWhenStopped={true}
+          size="large"
+        />,
         "style": Object {
           "alignItems": "center",
           "flex": 1,
@@ -85,16 +70,13 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "Loading",
-          "ellipsizeMode": "tail",
-          "style": Object {
-            "color": "blue",
-          },
+          "animating": true,
+          "color": "#EA572D",
+          "hidesWhenStopped": true,
+          "size": "large",
         },
         "ref": null,
-        "rendered": "Loading",
+        "rendered": null,
         "type": [Function],
       },
       "type": [Function],

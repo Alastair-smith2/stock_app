@@ -10,7 +10,6 @@ describe("The Rates component", () => {
     "4. To_Currency Name": "USD",
     "5. Exchange Rate": 2
   };
-  console.log(mockData);
   beforeEach(() => {
     wrapper = shallow(<Rates data={mockData} />);
   });

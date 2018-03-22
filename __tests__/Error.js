@@ -57,7 +57,6 @@ describe("The Error component", () => {
     });
 
     it("Should be able to handle a restart press", () => {
-      console.log(wrapper.find("Search").props());
       wrapper
         .find("Search")
         .props()

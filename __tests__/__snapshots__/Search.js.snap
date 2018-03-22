@@ -43,6 +43,7 @@ ShallowWrapper {
           <Input
             label="Stock symbol"
             onTextInput={[Function]}
+            placeholder={undefined}
             type="search"
             value=""
           />
@@ -55,7 +56,13 @@ ShallowWrapper {
           }
         >
           <View
-            style={undefined}
+            style={
+              Object {
+                "flex": 0.5,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
           >
             <Button
               buttonPress={[Function]}
@@ -95,6 +102,7 @@ ShallowWrapper {
             <Input
               label="Stock symbol"
               onTextInput={[Function]}
+              placeholder={undefined}
               type="search"
               value=""
             />
@@ -107,7 +115,13 @@ ShallowWrapper {
             }
           >
             <View
-              style={undefined}
+              style={
+                Object {
+                  "flex": 0.5,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                }
+              }
             >
               <Button
                 buttonPress={[Function]}
@@ -139,6 +153,7 @@ ShallowWrapper {
             "children": <Input
               label="Stock symbol"
               onTextInput={[Function]}
+              placeholder={undefined}
               type="search"
               value=""
             />,
@@ -155,6 +170,7 @@ ShallowWrapper {
             "props": Object {
               "label": "Stock symbol",
               "onTextInput": [Function],
+              "placeholder": undefined,
               "type": "search",
               "value": "",
             },
@@ -170,7 +186,13 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <View
-              style={undefined}
+              style={
+                Object {
+                  "flex": 0.5,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                }
+              }
             >
               <Button
                 buttonPress={[Function]}
@@ -209,7 +231,11 @@ ShallowWrapper {
                 }
                 title="Search"
               />,
-              "style": undefined,
+              "style": Object {
+                "flex": 0.5,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
             },
             "ref": null,
             "rendered": Object {
@@ -264,6 +290,7 @@ ShallowWrapper {
             <Input
               label="Stock symbol"
               onTextInput={[Function]}
+              placeholder={undefined}
               type="search"
               value=""
             />
@@ -276,7 +303,13 @@ ShallowWrapper {
             }
           >
             <View
-              style={undefined}
+              style={
+                Object {
+                  "flex": 0.5,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                }
+              }
             >
               <Button
                 buttonPress={[Function]}
@@ -316,6 +349,7 @@ ShallowWrapper {
               <Input
                 label="Stock symbol"
                 onTextInput={[Function]}
+                placeholder={undefined}
                 type="search"
                 value=""
               />
@@ -328,7 +362,13 @@ ShallowWrapper {
               }
             >
               <View
-                style={undefined}
+                style={
+                  Object {
+                    "flex": 0.5,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  }
+                }
               >
                 <Button
                   buttonPress={[Function]}
@@ -360,6 +400,7 @@ ShallowWrapper {
               "children": <Input
                 label="Stock symbol"
                 onTextInput={[Function]}
+                placeholder={undefined}
                 type="search"
                 value=""
               />,
@@ -376,6 +417,7 @@ ShallowWrapper {
               "props": Object {
                 "label": "Stock symbol",
                 "onTextInput": [Function],
+                "placeholder": undefined,
                 "type": "search",
                 "value": "",
               },
@@ -391,7 +433,13 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <View
-                style={undefined}
+                style={
+                  Object {
+                    "flex": 0.5,
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  }
+                }
               >
                 <Button
                   buttonPress={[Function]}
@@ -430,7 +478,11 @@ ShallowWrapper {
                   }
                   title="Search"
                 />,
-                "style": undefined,
+                "style": Object {
+                  "flex": 0.5,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
               },
               "ref": null,
               "rendered": Object {

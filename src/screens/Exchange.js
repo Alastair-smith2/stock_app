@@ -46,10 +46,8 @@ export class Exchange extends Component {
             searchLabel={"Please enter 3 letter currency symbols"}
             searchType={"currency"}
             currencyOne={this.state.currencyOne}
-            typeOne="currencyOne"
             labelOne={"From"}
             currencyTwo={this.state.currencyTwo}
-            typeTwo="currencyTwo"
             labelTwo={"To"}
             submitSearch={this.handleSearch}
             onTextSearch={this.handleTextChange}
@@ -77,6 +75,7 @@ export class Exchange extends Component {
             labelTwo={"To"}
             submitSearch={this.handleSearch}
             onTextSearch={this.handleTextChange}
+            placeholder="Please enter a currency"
           />
         </View>
         {this.props.appData.currencyData && (

@@ -11,8 +11,8 @@ export default TabNavigator(
     Exchange: { screen: Exchange }
   },
   {
-    // default to top on android, bottom on iOS, fine as it is
-    // tabBarPosition: "top",
+    // default to top on android, bottom on iOS, visually it looks better at the bottom on both for this app
+    tabBarPosition: "bottom",
     // default to the top component on android, bottom on iOS, prefer the top component
     tabBarComponent: TabBarTop,
     swipeEnabled: true,
