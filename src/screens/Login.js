@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import { connect } from "react-redux";
@@ -43,6 +43,7 @@ export class Login extends Component {
             onTextInput={this.handleTextChange}
             type={"username"}
             label={"Username"}
+            placeholder="Please enter your username"
           />
         </View>
         <View style={styles.inputContainer}>
@@ -51,6 +52,7 @@ export class Login extends Component {
             onTextInput={this.handleTextChange}
             type={"password"}
             label={"Password"}
+            placeholder="Please enter your password"
           />
         </View>
         <View style={styles.buttonContainer}>
@@ -78,7 +80,15 @@ const styles = StyleSheet.create({
   intro: {
     fontSize: 24,
     fontFamily: "Futura",
-    fontWeight: "500"
+    fontWeight: "500",
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   },
   inputContainer: {
     flex: 0.1,

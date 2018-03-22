@@ -49,30 +49,32 @@ export function getDataCurrencySuccess(data) {
     data
   };
 }
+
+// gets the initial data to be displayed
 export function initialFetchData() {
   return dispatch => {
     dispatch(getData());
     return fetch(fetchInitialUrl + `${VantageApiKey}`)
       .then(response => {
-        console.log(response, "what is the response?");
         return response.json();
       })
       .then(data => {
-        console.log(data, "Data from fetch");
+        // console.log(data, "Data from fetch");
         let formattedData = Object.keys(data["Monthly Time Series"]).map(e => {
-          console.log(e, "What is e?");
+          // console.log(e, "The formatted Data");
           return { date: e, data: data["Monthly Time Series"][e] };
         });
-        console.log("Submit success");
+        // console.log("Submit success");
         dispatch(getDataSuccess(data["Meta Data"]["2. Symbol"], formattedData));
       })
       .catch(err => {
-        console.log(err, "Err, err from fetch");
+        // console.log(err, "Err, err from fetch");
         dispatch(getDataFailure());
       });
   };
 }
 
+// gets the currency exchange information about the two currencies given
 export function fetchCurrency(currencyOne, currencyTwo) {
   return dispatch => {
     dispatch(getData());
@@ -101,6 +103,7 @@ export function fetchCurrency(currencyOne, currencyTwo) {
   };
 }
 
+// fetches the latest stock information about a given stock
 export function fetchStock(stockId) {
   return dispatch => {
     dispatch(getData());
@@ -120,7 +123,7 @@ export function fetchStock(stockId) {
         dispatch(getDataSuccess(data["Meta Data"]["2. Symbol"], formattedData));
       })
       .catch(err => {
-        console.log("Err, err from fetch");
+        console.log(err, "Err, err from fetch");
         dispatch(getDataFailure());
       });
   };

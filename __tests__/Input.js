@@ -8,7 +8,12 @@ describe("The Input component", () => {
   let onTextInput = jest.fn();
   beforeEach(() => {
     wrapper = shallow(
-      <Input value="" type="username" onTextInput={onTextInput} />
+      <Input
+        value=""
+        type="username"
+        onTextInput={onTextInput}
+        placeholder="Please enter your username"
+      />
     );
     onTextInput.mockReset();
   });
@@ -35,6 +40,17 @@ describe("The Input component", () => {
       wrapper.find("TextInput").simulate("changeText", "test");
       expect(onTextInput.mock.calls.length).toEqual(1);
       expect(onTextInput.mock.calls[0][1]).toEqual("test");
+    });
+
+    it("Should have a secureTextProperty that exists when the type passed through is password", () => {
+      wrapper.setProps({
+        type: "password",
+        placeholder: "Please enter your password"
+      });
+      expect(wrapper.find("TextInput").prop("secureTextEntry")).toEqual(true);
+      expect(wrapper.find("TextInput").prop("placeholder")).toEqual(
+        "Please enter your password"
+      );
     });
   });
 });

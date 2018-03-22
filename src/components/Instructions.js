@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 
 const Instructions = ({ instructionContainer, label }) => {
   return (
@@ -13,7 +13,15 @@ const styles = StyleSheet.create({
   instruction: {
     fontSize: 18,
     textAlign: "center",
-    fontFamily: "Futura"
+    fontFamily: "Futura",
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   }
 });
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 
 const StockItem = ({ item }) => {
   return (
@@ -39,7 +39,15 @@ const styles = StyleSheet.create({
     flex: 0.25
   },
   text: {
-    textAlign: "center"
+    textAlign: "center",
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   }
 });
 export default StockItem;

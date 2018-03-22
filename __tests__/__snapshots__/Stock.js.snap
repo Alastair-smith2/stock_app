@@ -140,6 +140,7 @@ ShallowWrapper {
             error={false}
             label="A stock symbol"
             onTextSearch={[Function]}
+            placeholder="Please enter a stock symbol"
             searchType="stock"
             submitSearch={[Function]}
             type="search"
@@ -168,6 +169,7 @@ ShallowWrapper {
               ellipsizeMode="tail"
               style={
                 Object {
+                  "color": "black",
                   "fontFamily": "Futura",
                   "fontSize": 24,
                 }
@@ -320,6 +322,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               The Highest value, 
               94.33
@@ -363,6 +370,7 @@ ShallowWrapper {
             error={false}
             label="A stock symbol"
             onTextSearch={[Function]}
+            placeholder="Please enter a stock symbol"
             searchType="stock"
             submitSearch={[Function]}
             type="search"
@@ -382,6 +390,7 @@ ShallowWrapper {
             "error": false,
             "label": "A stock symbol",
             "onTextSearch": [Function],
+            "placeholder": "Please enter a stock symbol",
             "searchType": "stock",
             "submitSearch": [Function],
             "type": "search",
@@ -414,6 +423,7 @@ ShallowWrapper {
                 ellipsizeMode="tail"
                 style={
                   Object {
+                    "color": "black",
                     "fontFamily": "Futura",
                     "fontSize": 24,
                   }
@@ -566,6 +576,11 @@ ShallowWrapper {
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "black",
+                  }
+                }
               >
                 The Highest value, 
                 94.33
@@ -593,6 +608,7 @@ ShallowWrapper {
                 ellipsizeMode="tail"
                 style={
                   Object {
+                    "color": "black",
                     "fontFamily": "Futura",
                     "fontSize": 24,
                   }
@@ -621,6 +637,7 @@ ShallowWrapper {
                 ],
                 "ellipsizeMode": "tail",
                 "style": Object {
+                  "color": "black",
                   "fontFamily": "Futura",
                   "fontSize": 24,
                 },
@@ -903,6 +920,11 @@ ShallowWrapper {
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "black",
+                  }
+                }
               >
                 The Highest value, 
                 94.33
@@ -934,6 +956,9 @@ ShallowWrapper {
                   " ",
                 ],
                 "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "black",
+                },
               },
               "ref": null,
               "rendered": Array [
@@ -983,6 +1008,7 @@ ShallowWrapper {
               error={false}
               label="A stock symbol"
               onTextSearch={[Function]}
+              placeholder="Please enter a stock symbol"
               searchType="stock"
               submitSearch={[Function]}
               type="search"
@@ -1011,6 +1037,7 @@ ShallowWrapper {
                 ellipsizeMode="tail"
                 style={
                   Object {
+                    "color": "black",
                     "fontFamily": "Futura",
                     "fontSize": 24,
                   }
@@ -1163,6 +1190,11 @@ ShallowWrapper {
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "black",
+                  }
+                }
               >
                 The Highest value, 
                 94.33
@@ -1206,6 +1238,7 @@ ShallowWrapper {
               error={false}
               label="A stock symbol"
               onTextSearch={[Function]}
+              placeholder="Please enter a stock symbol"
               searchType="stock"
               submitSearch={[Function]}
               type="search"
@@ -1225,6 +1258,7 @@ ShallowWrapper {
               "error": false,
               "label": "A stock symbol",
               "onTextSearch": [Function],
+              "placeholder": "Please enter a stock symbol",
               "searchType": "stock",
               "submitSearch": [Function],
               "type": "search",
@@ -1257,6 +1291,7 @@ ShallowWrapper {
                   ellipsizeMode="tail"
                   style={
                     Object {
+                      "color": "black",
                       "fontFamily": "Futura",
                       "fontSize": 24,
                     }
@@ -1409,6 +1444,11 @@ ShallowWrapper {
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                    }
+                  }
                 >
                   The Highest value, 
                   94.33
@@ -1436,6 +1476,7 @@ ShallowWrapper {
                   ellipsizeMode="tail"
                   style={
                     Object {
+                      "color": "black",
                       "fontFamily": "Futura",
                       "fontSize": 24,
                     }
@@ -1464,6 +1505,7 @@ ShallowWrapper {
                   ],
                   "ellipsizeMode": "tail",
                   "style": Object {
+                    "color": "black",
                     "fontFamily": "Futura",
                     "fontSize": 24,
                   },
@@ -1746,6 +1788,11 @@ ShallowWrapper {
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "black",
+                    }
+                  }
                 >
                   The Highest value, 
                   94.33
@@ -1777,6 +1824,9 @@ ShallowWrapper {
                     " ",
                   ],
                   "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "black",
+                  },
                 },
                 "ref": null,
                 "rendered": Array [

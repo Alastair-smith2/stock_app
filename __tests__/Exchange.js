@@ -120,7 +120,6 @@ describe("The exchange tab", () => {
     let initialData = {
       appData: 1
     };
-    console.log(mapStateToProps(initialData).appData, "What is this?");
     expect(mapStateToProps(initialData).appData).toEqual(initialData.appData);
   });
 });

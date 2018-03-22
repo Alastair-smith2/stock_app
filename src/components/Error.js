@@ -19,7 +19,6 @@ export default class Error extends Component {
     this.restart = this.restart.bind(this);
   }
   onTextChange = (type, props) => {
-    console.log(type, props, "What are the props being passed through here?");
     this.props.onTextSearch(type, props);
   };
 
@@ -48,10 +47,11 @@ export default class Error extends Component {
               searchType={"currency"}
               currencyOne={this.props.currencyOne}
               typeOne="currencyOne"
+              placeholder="Please enter a currency"
               labelOne={this.props.currencyOneLabel}
               currencyTwo={this.props.currencyTwo}
               typeTwo="currencyTwo"
-              labelTwo={this.props.currencyOneLabel}
+              labelTwo={this.props.currencyTwoLabel}
               submitSearch={this.searchSubmit}
               onTextSearch={this.onTextChange}
               restart={this.restart}
@@ -63,6 +63,7 @@ export default class Error extends Component {
               searchType={"stock"}
               value={this.props.search}
               type={"search"}
+              placeholder="Please enter a stock code"
               submitSearch={this.searchSubmit}
               onTextSearch={this.onTextChange}
               restart={this.restart}
@@ -93,5 +94,8 @@ const styles = StyleSheet.create({
     flex: 0.3,
     marginLeft: 10,
     marginRight: 10
+  },
+  error: {
+    color: "red"
   }
 });

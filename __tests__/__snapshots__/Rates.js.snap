@@ -37,7 +37,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             From - 
             GBP
@@ -61,7 +65,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             To - 
             USD
@@ -85,7 +93,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             Rate - 
             2
@@ -110,7 +122,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             From - 
             GBP
@@ -132,7 +148,9 @@ ShallowWrapper {
               "GBP",
             ],
             "ellipsizeMode": "tail",
-            "style": undefined,
+            "style": Object {
+              "color": "black",
+            },
           },
           "ref": null,
           "rendered": Array [
@@ -165,7 +183,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             To - 
             USD
@@ -187,7 +209,9 @@ ShallowWrapper {
               "USD",
             ],
             "ellipsizeMode": "tail",
-            "style": undefined,
+            "style": Object {
+              "color": "black",
+            },
           },
           "ref": null,
           "rendered": Array [
@@ -220,7 +244,11 @@ ShallowWrapper {
             accessible={true}
             allowFontScaling={true}
             ellipsizeMode="tail"
-            style={undefined}
+            style={
+              Object {
+                "color": "black",
+              }
+            }
           >
             Rate - 
             2
@@ -242,7 +270,9 @@ ShallowWrapper {
               2,
             ],
             "ellipsizeMode": "tail",
-            "style": undefined,
+            "style": Object {
+              "color": "black",
+            },
           },
           "ref": null,
           "rendered": Array [
@@ -274,7 +304,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               From - 
               GBP
@@ -298,7 +332,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               To - 
               USD
@@ -322,7 +360,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               Rate - 
               2
@@ -347,7 +389,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               From - 
               GBP
@@ -369,7 +415,9 @@ ShallowWrapper {
                 "GBP",
               ],
               "ellipsizeMode": "tail",
-              "style": undefined,
+              "style": Object {
+                "color": "black",
+              },
             },
             "ref": null,
             "rendered": Array [
@@ -402,7 +450,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               To - 
               USD
@@ -424,7 +476,9 @@ ShallowWrapper {
                 "USD",
               ],
               "ellipsizeMode": "tail",
-              "style": undefined,
+              "style": Object {
+                "color": "black",
+              },
             },
             "ref": null,
             "rendered": Array [
@@ -457,7 +511,11 @@ ShallowWrapper {
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={undefined}
+              style={
+                Object {
+                  "color": "black",
+                }
+              }
             >
               Rate - 
               2
@@ -479,7 +537,9 @@ ShallowWrapper {
                 2,
               ],
               "ellipsizeMode": "tail",
-              "style": undefined,
+              "style": Object {
+                "color": "black",
+              },
             },
             "ref": null,
             "rendered": Array [

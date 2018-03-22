@@ -1,8 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform } from "react-native";
 
 const Rates = ({ data }) => {
-  console.log(data, "What is the data?");
   return (
     <View style={styles.container}>
       <View style={styles.rate}>
@@ -32,6 +31,16 @@ const styles = StyleSheet.create({
   },
   padding: {
     flex: 0.1
+  },
+  text: {
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   }
 });
 export default Rates;

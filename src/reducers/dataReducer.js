@@ -18,7 +18,6 @@ const initialState = {
 };
 
 export default function dataReducer(state = initialState, action) {
-  console.log(action, "Action");
   switch (action.type) {
     case LOGIN:
       return {

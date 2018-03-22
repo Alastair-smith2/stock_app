@@ -36,6 +36,7 @@ export default class Search extends Component {
                   onTextInput={this.onTextChange}
                   type={this.props.typeOne}
                   label={this.props.labelOne}
+                  placeholder={this.props.placeholder}
                 />
               </View>
               <View style={styles.padding} />
@@ -45,6 +46,7 @@ export default class Search extends Component {
                   onTextInput={this.onTextChange}
                   type={this.props.typeTwo}
                   label={this.props.labelTwo}
+                  placeholder={this.props.placeholder}
                 />
               </View>
             </View>
@@ -66,6 +68,7 @@ export default class Search extends Component {
                 onTextInput={this.onTextChange}
                 type={this.props.type}
                 label={this.props.label}
+                placeholder={this.props.placeholder}
               />
             </View>
             <View style={styles.buttonContainer}>

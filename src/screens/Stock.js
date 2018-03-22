@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, FlatList, Alert } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  Alert,
+  Platform
+} from "react-native";
 import Button from "../components/Button";
 import Search from "../components/Search";
 import StockItem from "../components/StockItem";
@@ -27,7 +34,6 @@ export class Stock extends Component {
   }
 
   handleTextChange = (type, text) => {
-    console.log(type, text, "What is the type and text?");
     this.setState({ [type]: text });
   };
 
@@ -48,23 +54,16 @@ export class Stock extends Component {
   };
 
   endReached = props => {
-    console.log(props, "What is the prop?");
     if (props.distanceFromEnd >= -5.5) {
       this.setState({ readMore: false });
     }
   };
 
   handleListChange = props => {
-    console.log(props, "props from handle list");
     let lengthOfData = this.props.appData.stockData.length - 1;
     let lengthOfVisible = props.viewableItems.length - 1;
-    console.log(lengthOfData);
-    console.log(lengthOfVisible, "What is this?");
-    console.log(lengthOfVisible >= 0, "Greater or equal than 0?");
-
     // if the length is less than 0 (what happens when you scroll past the bottom) then the item becomes undefined, no key available
     if (lengthOfVisible >= 0 && lengthOfData >= 0) {
-      console.log("Greater or equal than 0");
       if (
         props.viewableItems[lengthOfVisible]["key"] !==
         this.props.appData.stockData[lengthOfData].date
@@ -124,6 +123,7 @@ export class Stock extends Component {
             type={"search"}
             submitSearch={this.handleSearch}
             onTextSearch={this.handleTextChange}
+            placeholder="Please enter a stock symbol"
           />
         </View>
         {this.props.appData.stockData.length >= 1 && (
@@ -149,7 +149,7 @@ export class Stock extends Component {
               <View style={styles.more} />
             )}
             <View style={styles.highest}>
-              <Text>
+              <Text style={styles.sum}>
                 The Highest value, {sumTotal}, at any point for -{" "}
                 {this.props.appData.stockCode}{" "}
               </Text>
@@ -189,7 +189,15 @@ const styles = StyleSheet.create({
   },
   intro: {
     fontSize: 24,
-    fontFamily: "Futura"
+    fontFamily: "Futura",
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   },
   searchContainer: {
     flex: 0.3,
@@ -236,6 +244,16 @@ const styles = StyleSheet.create({
     flex: 0.14,
     flexDirection: "row",
     justifyContent: "center"
+  },
+  sum: {
+    ...Platform.select({
+      ios: {
+        color: "black"
+      },
+      android: {
+        color: "#212121"
+      }
+    })
   }
 });
 
@@ -255,7 +273,6 @@ Stock.navigationOptions = {
 };
 
 export function mapStateToProps(state) {
-  console.log(state, "What is this state?");
   return {
     appData: state.appData
   };
