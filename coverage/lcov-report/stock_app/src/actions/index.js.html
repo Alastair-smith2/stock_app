@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>49/49</span>
+        <span class='fraction'>44/44</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>49/49</span>
+        <span class='fraction'>44/44</span>
       </div>
     </div>
     <p class="quiet">
@@ -173,7 +173,10 @@
 <a name='L125'></a><a href='#L125'>125</a>
 <a name='L126'></a><a href='#L126'>126</a>
 <a name='L127'></a><a href='#L127'>127</a>
-<a name='L128'></a><a href='#L128'>128</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
@@ -225,25 +228,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -272,6 +277,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -351,30 +357,32 @@ export function getDataCurrencySuccess(data) {
     data
   };
 }
+&nbsp;
+// gets the initial data to be displayed
 export function initialFetchData() {
   return dispatch =&gt; {
     dispatch(getData());
     return fetch(fetchInitialUrl + `${VantageApiKey}`)
       .then(response =&gt; {
-        console.log(response, "what is the response?");
         return response.json();
       })
       .then(data =&gt; {
-        console.log(data, "Data from fetch");
+        // console.log(data, "Data from fetch");
         let formattedData = Object.keys(data["Monthly Time Series"]).map(e =&gt; {
-          console.log(e, "What is e?");
+          // console.log(e, "The formatted Data");
           return { date: e, data: data["Monthly Time Series"][e] };
         });
-        console.log("Submit success");
+        // console.log("Submit success");
         dispatch(getDataSuccess(data["Meta Data"]["2. Symbol"], formattedData));
       })
       .catch(err =&gt; {
-        console.log(err, "Err, err from fetch");
+        // console.log(err, "Err, err from fetch");
         dispatch(getDataFailure());
       });
   };
 }
 &nbsp;
+// gets the currency exchange information about the two currencies given
 export function fetchCurrency(currencyOne, currencyTwo) {
   return dispatch =&gt; {
     dispatch(getData());
@@ -403,6 +411,7 @@ export function fetchCurrency(currencyOne, currencyTwo) {
   };
 }
 &nbsp;
+// fetches the latest stock information about a given stock
 export function fetchStock(stockId) {
   return dispatch =&gt; {
     dispatch(getData());
@@ -422,7 +431,7 @@ export function fetchStock(stockId) {
         dispatch(getDataSuccess(data["Meta Data"]["2. Symbol"], formattedData));
       })
       .catch(err =&gt; {
-        console.log("Err, err from fetch");
+        console.log(err, "Err, err from fetch");
         dispatch(getDataFailure());
       });
   };
@@ -433,7 +442,7 @@ export function fetchStock(stockId) {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 22 2018 15:12:40 GMT+0000 (GMT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Mar 22 2018 16:19:56 GMT+0000 (GMT)
 </div>
 </div>
 <script src="../../../prettify.js"></script>
